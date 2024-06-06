@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import CardContext from "../../../context/cardContext";
 import Card from './cart'
+import { useSelector } from "react-redux";
 
 
 const BasketProductsLeft = () => {
-const { cardItems} = useContext(CardContext)
+// const { cardItems} = useContext(CardContext)
+const { data } = useSelector((state) => state.cart);
+
 
   return (
     <div className="">
@@ -15,7 +18,7 @@ const { cardItems} = useContext(CardContext)
         <h2 className="text-gray-700 font-maven-pro text-base font-medium leading-[16px]">Total</h2>
       </div>
       <div className="w-[750px] h-[230px] overflow-x-auto mt-[11px]">
-        {cardItems.map((item) => (
+        {data.map((item) => (
           <Card key={item.id} item={item}/>
         ))}
       </div>

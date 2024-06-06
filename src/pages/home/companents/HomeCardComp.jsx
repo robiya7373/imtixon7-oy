@@ -7,8 +7,8 @@ const HomeCardComp = () => {
       <div className=" flex gap-[28px] mb-[138px]">
         {cardData.map((item) => (
           <Link to={item.title} className=" bg-[#fbfbfb] flex px-[20px] py-[15px]" key={item.id}>
-            <div className=" w-[250px] h-[250px]">
-                <img src={item.image} alt={item.title} className="w-[350px] h-[350px]" />
+            <div className=" w-[250px] h-[300px] mt-[-60px]">
+                <img src={item.image} alt={item.title} className="w-[350px] h-[300px]" />
             </div>
             <div className="">
                 <h2 className="max-w-[180px] text-[#3d3d3d] font-mavenpro text-[20px] font-bold leading-[26px] text-right float-right">{item.title}</h2>

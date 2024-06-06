@@ -13,21 +13,33 @@ const Modal = ({ onCancel }) => {
     console.log(values);
   };
 
-  
   return (
-    <div className="fixed left-0 top-0 w-full h-screen bg-[#0009]" onClick={() => onCancel()}>
-      <div className="modal flex gap-x-[100px] absolute top-1/2 left-1/2 bg-white transform translate-x-[-50%] -translate-y-[-50%]" onClick={(e) => e.stopPropagation()}>
-        <button className="absolute right-5 top-5 p-[2px] bg-transparent text-[#46a358] border-none text-[22px] transform rotate-45" onClick={() => onCancel()}>
+    <div
+      className="fixed inset-0 w-full h-screen z-[9999] bg-[#0009] flex justify-center items-center"
+      onClick={() => onCancel()}
+    >
+      <div
+        className="modal flex gap-x-[100px] bg-white p-[20px] rounded-lg shadow-lg relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          className="absolute right-5 top-5 p-[2px] bg-transparent text-[#46a358] border-none text-[22px] transform rotate-45"
+          onClick={() => onCancel()}
+        >
           <PlusOutlined />
         </button>
         <div className="py-[55px] px-[100px]">
-          <div className=" flex justify-center items-center gap-[10px]">
+          <div className="flex justify-center items-center gap-[10px] mb-[20px]">
             <Link to={"/"}>
-              <button className="text-[#46a358] font-maven-pro text-[20px] font-medium leading-[16px] border-none bg-transparent cursor-pointer">Login</button>
+              <button className="text-[#46a358] font-maven-pro text-[20px] font-medium leading-[16px] border-none bg-transparent cursor-pointer">
+                Login
+              </button>
             </Link>
             <p>|</p>
             <Link to={"/"}>
-              <button className="text-[#3d3d3d] font-maven-pro text-[20px] font-medium leading-[16px] border-none bg-transparent cursor-pointer">Register</button>
+              <button className="text-[#3d3d3d] font-maven-pro text-[20px] font-medium leading-[16px] border-none bg-transparent cursor-pointer">
+                Register
+              </button>
             </Link>
           </div>
           <p className="text-center my-[23px] font-maven-pro text-[13px] text-[#3d3d3d] font-normal leading-[16px]">
@@ -90,8 +102,10 @@ const Modal = ({ onCancel }) => {
               </Button>
             </Form.Item>
           </Form>
-          <div className="login  relative">
-            <p className="mx-auto text-[#3d3d3d] font-maven-pro text-[13px] font-normal leading-[16px] px-[10px] z-10 bg-white max-w-max">Or login with</p>
+          <div className="login relative">
+            <p className="mx-auto text-[#3d3d3d] font-maven-pro text-[13px] font-normal leading-[16px] px-[10px] z-10 bg-white max-w-max">
+              Or login with
+            </p>
           </div>
           <div className="flex flex-col gap-y-[15px] my-[27px] mx-auto mb-[38px]">
             <button className="flex gap-[10px] justify-center items-center py-[10px] px-0 text-[#46a358] bg-white border border-[#eaeaea] rounded-lg font-maven-pro font-medium leading-[16px] text-[13px] transition duration-500 hover:bg-[#46a358] hover:text-white google">
