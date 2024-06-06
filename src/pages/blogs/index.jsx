@@ -1,6 +1,6 @@
 const BlogsPage = () => {
     return <div className="blogs__page">
-        blogs page
+        Blogs page
     </div>
 }
 

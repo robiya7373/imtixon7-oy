@@ -53,11 +53,11 @@ const FooterComp = () => {
           </div>
           <div className=" flex items-center gap-[10px]">
             <img src={FooterEmail} alt="footer email icon" />
-            <p className=" text-[#3d3d3d] text-[14px] font-normal leading-[22px]">abbosomonboyev1506@gmail.com</p>
+            <p className=" text-[#3d3d3d] text-[14px] font-normal leading-[22px]">contact@greenshop.com</p>
           </div>
           <div className=" flex items-center gap-[10px]">
             <img src={FooterCall} alt="footer call icon" />
-            <p className="text-[#3d3d3d] text-[14px] font-normal leading-[22px]">+998 33 317 17 18</p>
+            <p className="text-[#3d3d3d] text-[14px] font-normal leading-[22px]">+88 01911 717 490</p>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ const FooterComp = () => {
           </div>
         </div>
       </div>
-      <p className="font-mavenpro my-[10px] mx-auto text-center text-[18px] font-normal">© 2023 GreenShop. Abbos Omonboyev.</p>
+      <p className="font-mavenpro my-[10px] mx-auto text-center text-[18px] font-normal">© 2021 GreenShop. All Rights Reserved.</p>
     </div>
   );
 };

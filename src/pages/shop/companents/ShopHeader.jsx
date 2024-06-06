@@ -150,7 +150,7 @@ const ShopHeader = ({ setBasket }) => {
             <HeartFilled />
             </button>
           </div>
-          <div className="info__socials">
+          <div className="flex mt-[18px] items-center gap-[15px]">
             <div className="info__socials__title">Share this products:</div>
             <div className="info__socials__icons">
               <i>
